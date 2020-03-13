@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>test</title>
+<style type="text/css">
+	.panel {
+		float: left;
+		margin: 20px;
+		position: relative;
+		font-size: .8em;
+
+		-webkit-perspective: 600px;
+		-moz-perspective: 600px;
+						perspective: 600px;
+	}
+	.panel .front {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 900;
+		width: inherit;
+		height: inherit;
+		border: 1px solid #ccc;
+		background: #6b7077;
+		text-align: center;
+		box-shadow: 0 1px 5px rgba(0,0,0,0.9);
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+	}
+	.panel.flip .front {
+		z-index: 900;
+		border-color: #eee;
+		background: #333;
+		box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+
+		-webkit-transform: rotateY(180deg);
+			 -moz-transform: rotateY(180deg);
+						transform: rotateY(180deg);
+	}
+
+	.panel .back {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 800;
+		width: inherit;
+		height: inherit;
+		border: 1px solid #ccc;
+		background: #333;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+
+		-webkit-transform: rotateY(-180deg);
+			 -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+						transform: rotateY(-179deg);
+
+		-webkit-transform-style: preserve-3d;
+			 -moz-transform-style: preserve-3d;
+						transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+			 -moz-backface-visibility: hidden;
+						backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+						transition: all .4s ease-in-out;
+	}
+
+	.panel.flip .back {
+		z-index: 1000;
+		background: #80868d;
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+			 -moz-transform: rotateX(0deg) rotateY(0deg);
+						transform: rotateX(0deg) rotateY(0deg);
+
+		box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+	}
+
+
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="../sg.min-1.0.js"></script>
+<script type="text/javascript">
+
+
+sg.addCustomTag({
+	name: "sg-btn-panel",
+	originTag: "span",
+	tagInit: function( element ){
+		var txt = $( element ).text();
+		var html;
+		html = '<div class="front">';
+		html += 	'<h2 style="visibility:hidden;">' + txt + '</h2>'
+		html += '</div>';
+		html += '<div class="back">';
+		html += 	'<h2>' + txt + '</h2>'
+		html += '</div>';
+		$( element )
+			.addClass( "panel" )
+			.text( "" )
+			.append( html )
+			.data( "visible", false );	
+	},
+	event: "click",
+	eventHandle: function( element){
+		var visible = $( element ).data( "visible" );
+		if( !visible ){
+			$( element ).addClass( "flip" );
+		}else{
+			$( element ).removeClass( "flip" );
+		}
+		$( element ).data( "visible", !visible );
+	}
+});
+
+
+</script>
+
+<script type="text/javascript">
+
+sg.setStage( "#stage" );
+sg.setScaleMode( "showall" );
+sg.init();
+
+</script>
+</head>
+
+<body>
+    <div id="stage" style="width:500px; height:400px; border:solid 1px #000;">
+    	<sg-btn-panel>
+        	Hello everyone!
+        </sg-btn-panel>
+	</div>
+</body>
+</html>

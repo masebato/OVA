@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.borRdBx{padding:15px 30px;border:3px solid #ffcc00;border-radius:20px;font-size:2em;background:#fff}
+.borRdBx{position:relative;margin-top:10px;width:94%;min-height:50px}
+.borRdBx .cover{position:absolute;top:6px;left:6px;width:98%;height:88%;text-align:center;vertical-align:middle;background:#fff;border-radius:20px;cursor:pointer;text-align:center}
+.borRdBx .num{position:absolute;top:50%;margin-top:-45px;left:48.5%;padding:0;font-size:2.5em;color:#a2bd31;font-weight:bold;line-height:0.9;vertical-align:middle;text-shadow:2px 0 0 #4f5f0d}
+.borRdBx .arrow{position:absolute;top:50%;left:50%;margin-top:-7px}
+.borRdBxWrap{padding-top:70px;}
+

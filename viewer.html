@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Viewer</title>
+
+    <!-- js -->
+    <script type="text/javascript" src="viewer_xml.js"></script>
+    <script type="text/javascript" src="common/lib/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="resources/viewer.js"></script>
+
+    <!-- css -->
+    <link href="resources/viewer.css" rel="stylesheet" type="text/css">
+    <link href="resources/fonts/stylesheet.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="topbar">
+            <a href="#" onclick="toggleLeftMenu(this)">Ocultar el menú <span></span></a>
+            <a href="#" onclick="prev()"><span></span> <label>Anterior</label></a>
+            <a href=""><span></span></a>
+            <a href="#" onclick="next()"><label>Siguiente</label> <span></span></a>
+        </div>
+
+        <div id="sidebar"></div>
+
+        <div id="content"></div>
+    </div>
+
+
+</body>
+
+</html>

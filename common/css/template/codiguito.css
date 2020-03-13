@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ggd M style*/
+
+#ggc_cabecera {
+	width: 94%;
+	height: 70px;
+	margin: 0px;
+	padding-top: 20px;
+	text-align: right;
+}
+
+#ggc_titulo{
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#ggc_cont_btn{
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/*BOTONES*/
+#ggc_btn_teclado, #ggc_btn_objetivos {
+	width: 140px;
+	height: 80px;
+	margin: -10px 2px 0px 0;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 10px 10px 0 0 ;
+	cursor:pointer;
+	transition: background-color 0.5s ease-in-out;
+	transition: all 0.5s ease;
+}
+
+.ggc_btn_teclado_estado:hover, .ggc_btn_objetivos_estado:hover {
+	-webkit-transform:scale(1.1,1.1);
+	opacity: 1;
+}
+.ggc_btn_teclado_estado{
+	opacity: 1;
+	background: url("../../../skins/M_GGD/img/iconos_botones_objetivos-01.png") top no-repeat;
+}
+.ggc_btn_objetivos_estado{
+	opacity: 0.5;
+	background: url("../../../skins/M_GGD/img/iconos_botones_objetivos-02.png") center no-repeat;
+}
+
+
+
+.ggc_textArea{
+	width:90%;
+	background-color:transparent;
+	border:none;
+	border-radius: 10px;
+	font-size:4em;
+	text-shadow: 1px 1px 3px #424242;
+	box-shadow: 0px 5px 10px 1px #424242;
+	display:block;
+	padding: 10px;
+	margin: 0 auto;
+	color:#4C4D4D;
+}
+#ggc_objetivos{
+	width: 90%;
+	height: auto;
+	display:none;
+	text-align: left;
+}
+img {
+	width: 50px;
+	margin-right: 20px;
+
+}
+
+#ggc_objetivos p{
+	font-size:3.2em;
+	line-height:1em;
+	vertical-align: middle;
+	margin: 0;
+	color:#4C4D4D;
+	padding: 20px;
+}
+ h2{
+ 	margin-right:10px;
+ 	text-align: right;
+	padding: 0;
+	margin: 0;
+	color:#4C4D4D;
+ }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>M_G07_U02_L03_04</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/sg.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/GGC.css">
+    <link rel="stylesheet" type="text/css" href="../../skins/M_GGC/M_GGC.css">
+    <link rel="stylesheet" type="text/css" href="css/EV3.css">
+    <script type="text/javascript" src="../../common/lib/require/require.js"></script>
+    <script type="text/javascript" src="../../common/js/main_1.0.js"></script>
+    <script>
+        function init() {
+            $('.circulo, .campoOculto, .pregunta, .celdaOculta').one('click', function() {
+                $(this).css({
+                    'cursor': 'default'
+                });
+                sg.fadeOut($(this).children('.clickCirculo, .clickCampoOculto , .click'));
+                sg.fadeIn($(this).children('.numero, .respuesta, [id*=texto], [class*=texto]'));
+
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="stage" data-sg-scalemode="showall">
+        <div id="content" class="ggc_contenedorGeneral">
+            <header class="ggc_header_M">
+                <div class="ggc_icon ggc_icon_M_resumen"></div>
+                <h1>Escribe falso o positivo</h1>
+            </header>
+            <!-- INCIO CONTENIDO (CONTENT) -->
+            <div class="ggc_contenido ggc_contenido_M" style="background-color:#f5f5f5;">
+                <!-- INCIO PAGE 1-->
+                <sg-item-page data-sg-key="1" data-sg-group="1">
+                    <div class="area1 optimizeImage">
+                        <div class="q1v" sg-click="sg.hide(this);sg.hide('.q1f');sg.show('.r1v');" sg-sound="success"></div>
+                        <div class="q1f" sg-click="sg.hide(this);sg.show('.r1f');" sg-sound="error"></div>
+                        <div class="r1v optimizeImage" sg-init="sg.hide(this);"></div>
+                        <div class="r1f optimizeImage" sg-init="sg.hide(this);"></div>
+
+                        <div class="q2v" sg-click="sg.hide(this);sg.show('.r2v');" sg-sound="error"></div>
+                        <div class="q2f" sg-click="sg.hide(this);sg.hide('.q2v');sg.show('.r2f');" sg-sound="success"></div>
+                        <div class="r2v optimizeImage" sg-init="sg.hide(this);"></div>
+                        <div class="r2f optimizeImage" sg-init="sg.hide(this);"></div>
+
+                        <div class="q3f" sg-click="sg.hide(this);sg.hide('.q3v');sg.show('.r3f');" sg-sound="success"></div>
+                        <div class="q3v" sg-click="sg.hide(this);sg.show('.r3v');" sg-sound="error"></div>
+                        <div class="r3v optimizeImage" sg-init="sg.hide(this);"></div>
+                        <div class="r3f optimizeImage" sg-init="sg.hide(this);"></div>
+
+                        <div class="q4v" sg-click="sg.hide(this);sg.hide('.q4f');sg.show('.r4v');" sg-sound="success"></div>
+                        <div class="q4f" sg-click="sg.hide(this);sg.show('.r4f');" sg-sound="error"></div>
+                        <div class="r4v optimizeImage" sg-init="sg.hide(this);"></div>
+                        <div class="r4f optimizeImage" sg-init="sg.hide(this);"></div>
+
+                        <div class="q5f" sg-click="sg.hide(this);sg.show('.r5f');" sg-sound="error"></div>
+                        <div class="q5v" sg-click="sg.hide(this);sg.hide('.q5f');sg.show('.r5v');" sg-sound="success"></div>
+                        <div class="r5v optimizeImage" sg-init="sg.hide(this);"></div>
+                        <div class="r5f optimizeImage" sg-init="sg.hide(this);"></div>
+                    </div>
+                </sg-item-page>
+                <!-- FIN PAGE 1-->
+
+
+            </div>
+            <!-- FIN CONTENIDO (CONTENT) -->
+        </div>
+    </div>
+</body>
+
+</html>

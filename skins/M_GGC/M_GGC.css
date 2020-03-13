@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CCS Document */
+
+html, body {
+	background: #CCCAC9; /* Old browsers */
+	background: -moz-linear-gradient(top, #CCCAC9 0%, #CCCAC9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CCCAC9), color-stop(100%, #CCCAC9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #CCCAC9 0%, #CCCAC9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #CCCAC9 0%, #CCCAC9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #CCCAC9 0%, #CCCAC9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #CCCAC9 0%, #CCCAC9 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCCAC9', endColorstr='#CCCAC9', GradientType=0 ); /* IE6-9 */
+	background-attachment: fixed;
+}
+/* ESTRUCTURA GENERAL */ /*   */
+.ggc_header_M {
+	background: #313e4b;
+	border-bottom-color: #ca4f23;
+	text-align: left;
+	display: flex;
+}
+.ggc_header_M h1 {
+color: #ECEFF0;
+}
+.ggc_contenido_M {
+	background: #fefefe;
+border-bottom-color: #313e4b;
+	color: #575756;
+}
+/*HEADER */
+.ggc_icon_M_introduccion {
+	background-image: url(img/ggc_M_icon_introduccion-01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.ggc_icon_M_objetivos {
+	background-image: url(img/ggc_M_icon_objetivos-01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.ggc_icon_M_contenido {
+	background-image: url(img/ggc_M_icon_contenido-01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.ggc_icon_M_resumen {
+	background-image: url(img/ggc_M_icon_resumen-01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.ggc_icon_M_valoracion {
+	background-image: url(img/ggc_M_icon_valoracion-01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+/* TEXTOS */
+
+h1 {
+	color: #ECEFF0;
+}
+p {
+	font-size: 43px;
+	line-height: 43px;
+	vertical-align: middle;
+}
+/* OBJETIVOS */
+.ggc_icon_M_objetivos-01_01 {
+	background-image: url(img/ggc_icon_M_objetivos-01_01.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 1;
+	width: 121px;
+	height: 54px;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor: pointer;
+	-webkit-transition: all 0.5 ease-in-out;
+	-moz-transition: all 0.5 ease-in-out;
+	-o-transition: all 0.5 ease-in-out;
+	transition: all 0.5 ease-in-out;
+	margin-right: 5%;
+}
+.ggc_icon_M_objetivos-01_02 {
+	background-image: url(img/ggc_icon_M_objetivos-01_02.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-left: 5%;
+	opacity: 0.5;
+	width: 121px;
+	height: 54px;
+	display: inline-block;
+	vertical-align: top;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor: pointer;
+	-webkit-transition: all 0.5 ease-in-out;
+	-moz-transition: all 0.5 ease-in-out;
+	-o-transition: all 0.5 ease-in-out;
+	transition: all 0.5 ease-in-out;
+}
+.ggc_icon_M_objetivos-01_01:hover, .ggc_icon_M_objetivos-01_02:hover {
+	-webkit-transform: scale(1.1, 1.1);
+	opacity: 1 !important;
+}

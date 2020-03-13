@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>M_G07_U02_L03_01</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/sg.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/GGC.css">
+    <link rel="stylesheet" type="text/css" href="../../skins/M_GGC/M_GGC.css">
+    <link rel="stylesheet" type="text/css" href="css/M_G07_U02_L03_01.css">
+    <script type="text/javascript" src="../../common/lib/require/require.js"></script>
+    <script type="text/javascript" src="../../common/js/main_1.0.js"></script>
+    <script>
+        function init() {
+            $('[data-sg-id="btn-page"]').on('click', function() {
+
+                var sugerencia = $('.sugerencia');
+                var pagekey = $('[data-sg-id="item-page"]:visible').data('sgKey');
+                if (pagekey == 0 || pagekey == 2) {
+                    $(sugerencia).html('Hacer clic <img src="img/click/click_guide4.png" class="imgSugerencia" /> para ver la respuesta');
+
+                } else {
+                    $(sugerencia).html('');
+                }
+
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="stage" data-sg-scalemode="showall">
+        <div id="content" class="ggc_contenedorGeneral">
+            <header class="ggc_header_M">
+                <div class="ggc_icon ggc_icon_M_objetivos"></div>
+                <h1>DIRECCIONAMIENTO ESTRATÉGICO</h1>
+            </header>
+            <!-- INCIO CONTENIDO (CONTENT) -->
+            <div class="ggc_contenido ggc_contenido_M" style="background-color:#FFFADD;">
+                <!-- INCIO PAGE 1-->
+                <sg-item-page data-sg-key="1" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area1 optimizeImage">
+                        <center>
+                            <div class="videoContenedor" style="padding-top:6%;">
+                                <video width="800" height="450" controls style="margin-top:8%;">
+                                    <source src="video/VIDEO1.mp4" type='video/mp4' />
+                                    <source src="video/AN_M_G07_U02_L03_01.ogg" type='video/ogv' /> No se reproduce el video? <a href="video/AN_M_G07_U02_L03_01.mp4">Descargar</a>. </video>
+                            </div>
+                        </center>
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 87.7%;left: 91.8%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 1 -->
+                <!-- INCIO PAGE 2-->
+                <sg-item-page data-sg-key="2" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area2 optimizeImage">
+
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="1" data-sg-group="1" style="  top: 85.7%;left: 2.8%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 2 -->
+
+
+            </div>
+            <!-- FIN CONTENIDO (CONTENT) -->
+        </div>
+    </div>
+</body>
+
+</html>

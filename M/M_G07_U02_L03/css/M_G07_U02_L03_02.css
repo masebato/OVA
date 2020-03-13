@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*BOTONES*/
+
+#ggc_cont_btn {
+    text-align: right;
+    margin-right: 5%;
+    padding-top: 2%;
+}
+.ggc_textArea {
+    font-family: "cabinmedium" !important;
+    width: 95%;
+    max-width: 95%;
+    height: 423px;
+    max-height: 423px;
+    background-color: transparent;
+    border: 0px solid #CCCAC9;
+    border-radius: 10px;
+    font-size: 60px;
+    text-shadow: 1px 1px 3px #424242;
+    display: block;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    padding: 10px 10px 10px 10px;
+    z-index: 6;
+}
+.ggc_textArea:focus {
+    outline: none;
+    border-radius: 10px;
+    border: 2.5px solid #CCCAC9;
+}
+#ggc_objetivos {
+    font-family: "cabinregular" !important;
+    width: 86%;
+    height: 85%;
+    text-align: left;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    white-space: nowrap;
+}
+.area1 {
+    background-image: url(../img/M_G07_U02_L03_02/imgO-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1116.59px;
+    height: 480px;
+    position: absolute;
+    left: 6%;
+    top: 19%;
+    z-index: 1;
+}
+.click {
+    background-image: url(../img/M_G07_U02_L03_02/imgO-click1-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1168.66px;
+    height: 257.79px;
+    position: absolute;
+    left: -5%;
+    top: 26%;
+    z-index: 2;
+}
+.main {
+    background-image: url(../img/M_G07_U02_L03_02/imgO-main-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1120.52px;
+    height: 225.99px;
+    position: absolute;
+    left: -3%;
+    top: 29%;
+    z-index: 1;
+}

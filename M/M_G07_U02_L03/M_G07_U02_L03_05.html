@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>M_G07_U02_L03_05</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/sg.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/GGC.css">
+    <link rel="stylesheet" type="text/css" href="../../skins/M_GGC/M_GGC.css">
+    <link rel="stylesheet" type="text/css" href="css/M_G07_U02_L03_05.css">
+    <script type="text/javascript" src="../../common/lib/require/require.js"></script>
+    <script type="text/javascript" src="../../common/js/main_1.0.js"></script>
+    <script>
+        function init() {
+            $('.circulo, .campoOculto, .pregunta, .celdaOculta').one('click', function () {
+                $(this).css({
+                    'cursor': 'default'
+                });
+                sg.fadeOut($(this).children('.clickCirculo, .clickCampoOculto , .click'));
+                sg.fadeIn($(this).children('.numero, .respuesta, [id*=texto], [class*=texto]'));
+                sg.sound('success-low');
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="stage" data-sg-scalemode="showall">
+        <div id="content" class="ggc_contenedorGeneral">
+            <header class="ggc_header_M">
+                <div class="ggc_icon ggc_icon_M_valoracion"></div>
+                <h1>Tarea en casa</h1>
+            </header>
+            <!-- INCIO CONTENIDO (CONTENT) -->
+            <div class="ggc_contenido ggc_contenido_M">
+                    <!-- INCIO PAGE 1-->
+                    <sg-item-page data-sg-key="1" data-sg-group="1" data-sg-sound="success-low">
+                         
+                       <div class="area1 optimizeImage">
+                           <div class="click1 optimizeImage" sg-click="$('.click1').fadeOut();" sg-sound="success-low"></div>
+                           <div class="click2 optimizeImage" sg-click="$('.click2').fadeOut();" sg-sound="success-low"></div>
+                        </div>
+                    </sg-item-page>
+                    <!-- FIN PAGE 1-->
+                  
+
+
+                    
+                </div>
+
+            </div>
+            <!-- FIN CONTENIDO (CONTENT) -->
+        </div>
+    </div>
+</body>
+
+</html>

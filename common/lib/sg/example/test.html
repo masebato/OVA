@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="../../jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../sg-1.0.js"></script>
+<script type="text/javascript" src="../sg.attr.defaultPack-1.0.js"></script>
+<script type="text/javascript" src="../sg.tag.defaultPack-1.0.js"></script>
+<script type="text/javascript" src="../sg.attr.draggable-1.0.js"></script>
+
+<script>
+sg.addCustomAttr({
+	name: "sg-color",
+	init: function( element, attrValue ){
+		$( element ).css( "color", attrValue );
+	},
+	applyAll: true
+});
+
+sg.addCustomAttr({
+	name: "sg-alert",
+	action: function( element, attrValue ){
+		if( attrValue ) alert( attrValue );
+	}
+});
+
+sg.addCustomTag({
+	name: "sg-h1",
+	attr: [ "sg-color", "sg-alert" ],
+	tagInit: function( element ){
+		$( element ).css( "font-size", "40pt" );
+	},
+	event: "click",
+	eventHandle: function( element ){
+		$( element ).animate( {"font-size": "80pt"} );
+	}
+});
+</script>
+
+<script>
+sg.setStage( "#stage" );
+sg.setScaleMode( "showall" );
+sg.init();
+</script>
+</head>
+
+<body>
+<div id="stage" style="width:500px; height:400px; border:solid 1px #000;">
+	<sg-h1 sg-color="red">ABCD</sg-h1>
+</div>
+</body>
+</html>

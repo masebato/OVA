@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>M_G07_U02_L03_02</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/sg.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/GGC.css">
+    <link rel="stylesheet" type="text/css" href="../../skins/M_GGC/M_GGC.css">
+    <link rel="stylesheet" type="text/css" href="css/M_G07_U02_L03_02.css">
+    <script type="text/javascript" src="../../common/lib/require/require.js"></script>
+    <script type="text/javascript" src="../../common/js/main_1.0.js"></script>
+</head>
+
+<body>
+    <div id="stage" data-sg-scalemode="showall">
+        <div id="content" class="ggc_contenedorGeneral">
+            <header class="ggc_header_M">
+                <div class="ggc_icon ggc_icon_M_objetivos"></div>
+                <h1>Descubre el objetivo</h1>
+            </header>
+            <!-- INCIO CONTENIDO (CONTENT) -->
+            <div class="ggc_contenido ggc_contenido_M" style="background-color:#F5F5F5;">
+                <div style="height:50px;background-color:#FEFEFE;"></div>
+                <div class="lineaFondo" style="z-index: 2;position: relative;top: 1px;"></div>
+                <div id="ggc_cont_btn" style="z-index: 3;position: relative;padding-top: 0%;margin-top: -0.2%;">
+                    <sg-btn-page data-sg-key="1" data-sg-group="1" data-sg-opacity="true">
+                        <div class="ggc_icon_M_objetivos-01_01"></div>
+                    </sg-btn-page>
+                    <sg-btn-page data-sg-key="2" data-sg-group="1" data-sg-opacity="true">
+                        <div class="ggc_icon_M_objetivos-01_02"></div>
+                    </sg-btn-page>
+                </div>
+                <!-- INCIO PAGE 1 -->
+                <sg-item-page data-sg-key="1" data-sg-group="1" data-sg-sound="success-low">
+                    
+                    <div class="area1 optimizeImage"><textarea class="ggc_textArea" data-sg-placeholder="Escriba aquí"></textarea></div>
+                </sg-item-page>
+                <!-- FIN PAGE 1 -->
+
+                <!--INCIO PAGE 2 -->
+                <sg-item-page data-sg-key="2" data-sg-group="1" data-sg-sound="success-low">
+                    <div id="ggc_objetivos">
+                       <div class="click optimizeImage" sg-click="$('.click').fadeOut();" sg-sound="success-low"></div>
+                       <div class="main optimizeImage"></div>
+                        
+                        
+                    </div>
+                </sg-item-page>
+                <!--FIN PAGE 2 -->
+            </div>
+            <!-- FIN CONTENIDO (CONTENT) -->
+        </div>
+    </div>
+</body>
+
+</html>

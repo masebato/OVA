@@ -1,0 +1,29 @@
+.area1{
+     background-image: url(../img/M_G07_U02_L03_05/imgT-area1-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1247px;
+    height: 668px;
+    margin: 0 auto;
+    
+}
+.click1{
+     background-image: url(../img/M_G07_U02_L03_05/imgT-click1-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1003.24px;
+    height: 161.5px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.click2{
+     background-image: url(../img/M_G07_U02_L03_05/imgT-click2-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1003.2px;
+    height: 122px;
+    position: absolute;
+    top: 64%;
+    left: 10%;
+}

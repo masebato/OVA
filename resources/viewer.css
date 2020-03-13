@@ -1,0 +1,184 @@
+/* 
+    Created on : 26/09/2016, 03:07:16 PM
+    Author     : Programador
+*/
+
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('fonts/OpenSans-CondLight-webfont.eot');
+    src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-CondLight-webfont.woff') format('woff'), url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype'), url('fonts/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'open_sanscondensed_light';
+    background-color: #4E5869;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    background-color: #FFF;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#topbar {
+    height: 70px;
+    background-color: #1E4D5C;
+    border-bottom: solid 1px #666666;
+}
+
+#sidebar {
+    float: left;
+    width: 300px;
+    background-color: #8DDAE2;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    border-right: solid 1px #666666;
+}
+
+#content {
+    position: absolute;
+    left: 301px;
+    top: 71px;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    z-index: 99;
+}
+
+a:link {
+    text-decoration: none;
+    color: #36C;
+}
+
+a:visited,
+a.visited {
+    text-decoration: none;
+    color: #89AEC5;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0CF;
+}
+
+a:active,
+a.active {
+    text-decoration: none;
+    color: #C36;
+}
+
+#topbar a:nth-child(1) {
+    text-align: center;
+    display: inline-block;
+    margin-right: 28%;
+    background: #0094A0;
+    padding: 0px 14px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 300px;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+#topbar a {
+    color: #FFF;
+    font-size: 24px;
+}
+
+#topbar a:nth-child(1) span {
+    background: url(guia.png);
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    margin: 1px -2px;
+}
+
+#topbar a:nth-child(2) span {
+    background: url(icon-general-btns.png) 0 -65px;
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    margin: -5px -2px;
+}
+
+#topbar a:nth-child(3) span {
+    background: url(icon-general-btns.png) 0 -15px;
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    margin: -5px 30px -5px 20px;
+}
+
+#topbar a:nth-child(4) span {
+    background: url(icon-general-btns.png) 0 -116px;
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    margin: -5px -18px;
+}
+
+#sidebar {
+    color: #1E4D5C;
+    height: 624px;
+    background: url('logo-universidad-de-la-amazonia.png') no-repeat #8DDAE2;
+    background-position: bottom;
+}
+
+#sidebar>div>div {
+    background: url(bullet-ul.png) no-repeat rgba(141, 218, 226, 1);
+    padding: 7px 20px;
+    border-bottom: 1px solid #ffffff;
+    font-size: 22px;
+}
+
+#sidebar>div>div a {
+    background-color: #FFF;
+    width: 100%;
+    display: block;
+}
+
+#sidebar li {
+    background-color: #FFF;
+    padding: 2px 0px 0px 30px;
+    border-bottom: 1px solid #8ddae2;
+}
+
+#sidebar li a {
+    color: #1E4D5C;
+    font-size: 20px;
+}
+
+#sidebar .elements {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#sidebar>div>div span {
+    background: url(guia_menu.png);
+    width: 13px;
+    height: 8px;
+    display: inline-block;
+    margin: 2px -2px;
+}
+
+@media (max-width: 1024px) {
+    #topbar a:nth-child(1) {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+    #topbar a:nth-child(2) label,
+    #topbar a:nth-child(3) label,
+    #topbar a:nth-child(4) label {
+        display: none;
+    }
+}

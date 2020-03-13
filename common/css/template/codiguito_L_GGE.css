@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.template_botonesObjetivos
+{
+	width:200px;
+	height:80px;
+	margin:0 0.5%;
+	float:right;
+	cursor:pointer;
+}
+.template_subtituloObjetivos
+{
+	font-size:2em;
+	float:right;
+	margin:20px 10px 0 0;
+}
+
+.template_subtituloObjetivos_caja
+{
+	margin-top:10px;
+}
+.template_contenedorTextArea
+{
+	width:100%;
+	height:auto;
+	min-height:100px;
+	clear:right;
+}
+
+.template_textArea
+{
+	width:100%;
+	background-color:transparent;
+	border:none;
+	max-height:400px;
+	font-size:4em;
+	margin-top:10px;
+	text-shadow: 1px 1px 3px #424242;
+}
+.template_objetivos
+{
+	width:95%;
+	padding:0 1% 0 4%;
+	height:auto;
+	min-height:50px;
+	margin-bottom:20px;
+	background-position:left top;
+	background-repeat:no-repeat;
+	font-size:3em;
+}
+
+.template_objetivo1_M
+{
+	background-image:url(../../../skins/L_GGE/img/numeracion-01.png);
+}
+
+.template_objetivo2_M
+{
+	background-image:url(../../../skins/L_GGE/img/numeracion-02.png);
+}
+.template_contendorObjetivos_descubiertos
+{
+	width:98%;
+	padding:10px 1% 0 1%;
+	clear:right;
+	height:auto;
+}
+
+#botonTeclado
+{
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../../../skins/L_GGE/img/botonesObjetivos-01.png);
+}
+
+#botonTeclado:hover
+{
+	background-image:url(../../../skins/L_GGE/img/botonesObjetivos-05.png);
+}
+
+#botonMouse
+{
+	transition: background-image 0.5s ease-in-out;
+	background-image:url(../../../skins/L_GGE/img/botonesObjetivos-02.png);
+}
+
+#botonMouse:hover
+{
+	background-image:url(../../../skins/L_GGE/img/botonesObjetivos-06.png);
+}

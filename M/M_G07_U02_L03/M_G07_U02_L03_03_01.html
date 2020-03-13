@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>M_G07_U02_L03_03_01</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/sg.css">
+    <link rel="stylesheet" type="text/css" href="../../common/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/GGC.css">
+    <link rel="stylesheet" type="text/css" href="../../skins/M_GGC/M_GGC.css">
+    <link rel="stylesheet" type="text/css" href="css/M_G07_U02_L03_03_01.css">
+    <script type="text/javascript" src="../../common/lib/require/require.js"></script>
+    <script type="text/javascript" src="../../common/js/main_1.0.js"></script>
+    <script>
+        function init() {
+            require(["../../common/js/kit/inputKitComp.js"], function(inputKit) {
+                var lstVerbos1 = ["centilitro"];
+                var lstVerbos2 = ["litro"];
+                var lstVerbos3 = ["mililitro"];
+                var lstVerbos4 = ["8"];
+                var lstVerbos5 = ["gl"];
+                var lstVerbos6 = ["37,85"];
+                var lstVerbos7 = ["30,28"];
+                var lstVerbos8 = ["52,99"];
+                var lstVerbos9 = ["2777,77"];
+                var lstVerbos10 = ["912,69"];
+                var lstVerbos11 = ["317,46"];
+
+
+                $('input.completa1').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos1[textKey]], [answer])) {
+                        $(".completa1").css('color', '#2fac66');
+                        $(".completa1").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa1").css('color', '#e30613');
+                        $(".completa1").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa2').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos2[textKey]], [answer])) {
+                        $(".completa2").css('color', '#2fac66');
+                        $(".completa2").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa2").css('color', '#e30613');
+                        $(".completa2").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa3').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos3[textKey]], [answer])) {
+                        $(".completa3").css('color', '#2fac66');
+                        $(".completa3").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa3").css('color', '#e30613');
+                        $(".completa3").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa4').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos4[textKey]], [answer])) {
+                        $(".completa4").css('color', '#2fac66');
+                        $(".completa4").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa4").css('color', '#e30613');
+                        $(".completa4").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa5').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos4[textKey]], [answer])) {
+                        $(".completa5").css('color', '#2fac66');
+                        $(".completa5").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa5").css('color', '#e30613');
+                        $(".completa5").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa6').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos5[textKey]], [answer])) {
+                        $(".completa6").css('color', '#2fac66');
+                        $(".completa6").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa6").css('color', '#e30613');
+                        $(".completa6").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa7').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos5[textKey]], [answer])) {
+                        $(".completa7").css('color', '#2fac66');
+                        $(".completa7").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa7").css('color', '#e30613');
+                        $(".completa7").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa8').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos5[textKey]], [answer])) {
+                        $(".completa8").css('color', '#2fac66');
+                        $(".completa8").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa8").css('color', '#e30613');
+                        $(".completa8").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa9').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos6[textKey]], [answer])) {
+                        $(".completa9").css('color', '#2fac66');
+                        $(".completa9").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa9").css('color', '#e30613');
+                        $(".completa9").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa10').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos7[textKey]], [answer])) {
+                        $(".completa10").css('color', '#2fac66');
+                        $(".completa10").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa10").css('color', '#e30613');
+                        $(".completa10").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa11').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos8[textKey]], [answer])) {
+                        $(".completa11").css('color', '#2fac66');
+                        $(".completa11").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa11").css('color', '#e30613');
+                        $(".completa11").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa15').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos9[textKey]], [answer])) {
+                        $(".completa15").css('color', '#2fac66');
+                        $(".completa15").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa15").css('color', '#e30613');
+                        $(".completa15").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa16').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos10[textKey]], [answer])) {
+                        $(".completa16").css('color', '#2fac66');
+                        $(".completa16").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa16").css('color', '#e30613');
+                        $(".completa16").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+                $('input.completa17').change(function() {
+
+                    var txt = $(this);
+                    var textKey = parseInt($(txt).data('textKey')) - 1;
+                    var answer = $.trim($(txt).val().toLowerCase());
+                    if (answer === "") {
+
+                        return false;
+                    }
+                    var resultado = $(".resultadoOracion1[data-text-key=" + (textKey + 1) + "]");
+                    $(resultado).hide().removeClass('resultadoOracionSuccess1 resultadoOracionFail1');
+                    //Si es correcta
+                    if (inputKit.check([lstVerbos11[textKey]], [answer])) {
+                        $(".completa17").css('color', '#2fac66');
+                        $(".completa17").css('border', '0');
+                        sg.sound('success-low');
+                        //Es incorrecta
+                    } else {
+                        $(".completa17").css('color', '#e30613');
+                        $(".completa17").css('border', '0');
+                        sg.sound('error');
+                    }
+
+                });
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="stage" data-sg-scalemode="showall">
+        <div id="content" class="ggc_contenedorGeneral">
+            <header class="ggc_header_M">
+                <div class="ggc_icon ggc_icon_M_contenido"></div>
+                <h1>¿C&oacute;mo cambian las unidades de capacidad?</h1>
+            </header>
+            <!-- INCIO CONTENIDO (CONTENT) -->
+            <div class="ggc_contenido ggc_contenido_M" style="background-color:#F8F1F7;">
+
+                <!-- INCIO PAGE 1-->
+                <sg-item-page data-sg-key="1" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area1 optimizeImage">
+                        <input type="text" class="completa1" data-text-key="1" />
+                        <input type="text" class="completa2" data-text-key="1" />
+                        <input type="text" class="completa3" data-text-key="1" />
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 1 -->
+                <!-- INCIO PAGE 2-->
+                <sg-item-page data-sg-key="2" data-sg-group="1" data-sg-sound="success-low" style="width:1247px;height:678px;background-color:#706F6F;">
+                    <div class="area2 optimizeImage">
+                       
+                       <div class="play" sg-click="sg.hide(this);$('.globo1').delay(1000).fadeIn();$('.globo2').delay(3000).fadeIn();$('.globo3').delay(5000).fadeIn();" sg-sound="success-low"></div>
+                        <div class="globo1" sg-init="sg.hide(this);"></div>
+                        <div class="globo2" sg-init="sg.hide(this);"></div>
+                        <div class="globo3" sg-init="sg.hide(this);"></div>
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 2 -->
+                <!-- INCIO PAGE 3-->
+                <sg-item-page data-sg-key="3" data-sg-group="1" data-sg-sound="success-low" style="width:1247px;height:678px;background-color:#706F6F;">
+                    <div class="area3 optimizeImage">
+                        <input type="text" class="completa4" data-text-key="1" />
+                        <input type="text" class="completa5" data-text-key="1" />
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 3 -->
+                <!-- INCIO PAGE 4-->
+                <sg-item-page data-sg-key="4" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area4 optimizeImage">
+                        <input type="text" class="completa6" data-text-key="1" />
+                        <input type="text" class="completa7" data-text-key="1" />
+                        <input type="text" class="completa8" data-text-key="1" />
+                        <input type="text" class="completa9" data-text-key="1" />
+                        <input type="text" class="completa10" data-text-key="1" />
+                        <input type="text" class="completa11" data-text-key="1" />
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 4 -->
+                <!-- INCIO PAGE 5-->
+                <sg-item-page data-sg-key="5" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area5 optimizeImage">
+                        <textarea class="completa12" data-text-key="1" ></textarea>
+                        <textarea class="completa13" data-text-key="1" ></textarea>
+                        <textarea class="completa14" data-text-key="1" ></textarea>
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 5 -->
+                <!-- INCIO PAGE 6-->
+                <sg-item-page data-sg-key="6" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area6 optimizeImage">
+                        <input type="text" class="completa15" data-text-key="1" />
+                        <input type="text" class="completa16" data-text-key="1" />
+                        <input type="text" class="completa17" data-text-key="1" />
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 6 -->
+                <!-- INCIO PAGE 7-->
+                <sg-item-page data-sg-key="7" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area7 optimizeImage">
+                        <textarea class="completa18" data-text-key="1" ></textarea>
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="next" data-sg-group="1" style="  top: 89.7%;left: 95%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 7 -->
+                <!-- INCIO PAGE 8-->
+                <sg-item-page data-sg-key="8" data-sg-group="1" data-sg-sound="success-low">
+                    <div class="area8 optimizeImage">
+                        <textarea class="completa19" data-text-key="1" ></textarea>
+                    </div>
+                    <sg-btn-page class="flechaSiguiente" data-sg-key="prev" data-sg-group="1" style="  top: 89.7%;left: 6%;z-index:3;"></sg-btn-page>
+                </sg-item-page>
+                <!-- FIN PAGE 8 -->
+
+
+            </div>
+            <!-- FIN CONTENIDO (CONTENT) -->
+        </div>
+    </div>
+</body>
+
+</html>

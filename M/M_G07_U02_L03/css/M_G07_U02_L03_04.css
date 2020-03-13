@@ -1,0 +1,197 @@
+.area1 {
+    background-image: url(../img/M_G07_U02_L03_04/imgR-area1-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1247px;
+    height: 668px;
+}
+
+.q1v {
+    width: 90px;
+    height: 88px;
+    position: absolute;
+    left: 77.3%;
+    top: 19.7%;
+}
+
+.q2v {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 77.3%;
+    top: 34.4%;
+}
+
+.q3v {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 77.3%;
+    top: 49.6%;
+}
+
+.q4v {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 77.3%;
+    top: 64.6%;
+}
+
+.q5v {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 77.3%;
+    top: 79.8%;
+}
+
+.q1f {
+    width: 90px;
+    height: 88px;
+    position: absolute;
+    left: 85.2%;
+    top: 19.7%;
+}
+
+.q2f {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 85.2%;
+    top: 34.4%;
+}
+
+.q3f {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 85.2%;
+    top: 49.6%;
+}
+
+.q4f {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 85.2%;
+    top: 64.6%;
+}
+
+.q5f {
+    width: 90px;
+    height: 93px;
+    position: absolute;
+    left: 85.2%;
+    top: 79.8%;
+}
+
+.r1v {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-no-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 86.99px;
+    height: 79.32px;
+    position: absolute;
+    left: 77.5%;
+    top: 20%;
+}
+
+.r2f {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-yes-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 86.99px;
+    height: 79.32px;
+    position: absolute;
+    left: 85.5%;
+    top: 35%;
+}
+
+.r3f {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-no-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 86.99px;
+    height: 79.32px;
+    position: absolute;
+    left: 85.5%;
+    top: 50%
+}
+
+.r4v {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-yes-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 86.99px;
+    height: 79.32px;
+    position: absolute;
+    left: 77.5%;
+    top: 65.5%;
+}
+
+.r5v {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-no-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 86.99px;
+    height: 79.32px;
+    position: absolute;
+    left: 77.5%;
+    top: 81%;
+}
+
+.r1f {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-yes-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 81.29px;
+    height: 71.73px;
+    position: absolute;
+    left: 85.5%;
+    top: 20%;
+}
+
+.r2v {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-no-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 81.29px;
+    height: 71.73px;
+    position: absolute;
+    left: 78%;
+    top: 36%;
+}
+
+.r3v {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-yes-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 81.29px;
+    height: 71.73px;
+    position: absolute;
+    left: 78%;
+    top: 52%;
+}
+
+.r4f {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-no-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 81.29px;
+    height: 71.73px;
+    position: absolute;
+    left: 85.5%;
+    top: 66%;
+}
+
+.r5f {
+    background-image: url(../img/M_G07_U02_L03_04/imgAct5-yes-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 81.29px;
+    height: 71.73px;
+    position: absolute;
+    left: 85.5%;
+    top: 82%;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CIER Norte</title>
+    <meta name="description" content="Hello">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|Roboto+Condensed:400,300italic,300,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+    <script src="js/jquery.imageLens.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+        /* Esto no fue necesario para arreglar el problema
+                                                                                                                                                                                
+                                                                                                                                                                                            jQuery.noConflict();
+                                                                                                                                                                                            jQuery(document).ready(function () {
+                                                                                                                                                                                                jQuery("#img_02").imageLens({ lensSize: 200 });
+                                                                                                                                                                                            });*/
+        $(function() {
+            $("#img_02").imageLens({
+                lensSize: 200
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            //Esto hace la magia del movimiento EASING entre secciones
+            linkInterno = $('a[href^="#"]');
+            linkInterno.on('click', function(e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(href).offset().top
+                }, 'slow', 'easeInOutExpo');
+            });
+
+            //Este metodo es arcaico y manual, pero funciona
+            $("#1").on('click', function() {
+                var aux = document.getElementsByClassName("active"); //obtengo en la pagina el elemento con la clase active y lo guardo en una variable auxiliar
+                var aux2 = aux[0].id; //navego dentro de la variable hasta llegar a la ID del objeto para saber a cual quitarle la propiedad active
+
+                $('#' + aux2).removeClass("active"); //le quito la clase active al menu que lo tenga
+                $("#1").addClass("active"); // y se lo pongo al menu 1, porque es el que acabo de pulsar, asi mismo en los otros metodos abajo 
+            });
+
+            $("#2").on('click', function() {
+                var aux = document.getElementsByClassName("active");
+                var aux2 = aux[0].id;
+
+                $('#' + aux2).removeClass("active");
+                $("#2").addClass("active");
+            });
+
+            $("#3").on('click', function() {
+                var aux = document.getElementsByClassName("active");
+                var aux2 = aux[0].id;
+
+                $('#' + aux2).removeClass("active");
+                $("#3").addClass("active");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <hr>
+
+
+        <!--------------------------- NAVBAR -------------------------------->
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="0" class="navbar-brand">ESQUEMA ESTRATÉGICO</a>
+                </div>
+                <!-- <div class="collapse navbar-collapse" id="example">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active" id="1"><a href="#section-01">ESTRUCTURA GENERAL</a></li>
+                        <li id="2"><a href="#section-02">ÍCONOS MOMENTOS APRENDIZAJE</a></li>
+                        <li id="3"><a href="#section-03">INSTRUCCIONES INTERACTIVIDAD</a></li>
+                    </ul>
+
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+
+
+        <div id="section-00" class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/charact-04.png" alt="...">
+                            <div class="caption">
+                               <a href="../M/M_G07_U02_L03/A2.html"> <h3>DIRECCIONAMIENTO ESTRATÉGICO</h3></a>
+                                <p>En esta sección aprenderás que el direccionamiento estratégio es la fuente de éxito de toda empresa para alcanzar sus metas y propositos. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/charact-05.png" alt="...">
+                            <div class="caption">
+                              <a href="../M/M_G07_U02_L03/A3.html">  <h3><span style="color:#0E83C1">DIAGNÓSTICO ESTRATÉGICO</span></h3></a>
+                                <p style="color:#0E83C1">En esta sección se describen los factores internos y externos que ayudarán a detectar las casusas principales de los problemas en su organización.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/ventas.png" width="250">
+                            <div class="caption">
+                              <a href="../M/M_G07_U02_L03/A4.html">  <h3><span style="color:#95BD20">ESTRATÉGIAS DE VENTAS</span></h3></a>
+                                <p style="color:#95BD20">En esta sección se conocerás algunas de las herramientas que te ayudaran a impulsar las ventas en tu organización.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="section-01" class="jumbotron-org">
+            <div class="container">
+                <h3>ESTRUCTURA GENERAL DE LA INTERFAZ</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+                                <img src="img/charact-04-01.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="thumbnail-org">
+                                <img id="img_02" src="img/01structure.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+
+        <!--------------------------- Blue Section -------------------------------->
+
+        <!-- <div id="section-02" class="jumbotron-blue">
+            <div class="container">
+                <h3>ÍCONOS MOMENTOS DE APRENDIZAJE</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+                                <img src="img/charact-05-01.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="well">
+                            <p>Estos íconos, que siempre se ubicarán en la esquina superior izquierda de la interfaz, le ayudarán a identificar el momento de aprendizaje en el que se encuentra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <p>Introducción</p>
+                                    </td>
+                                    <td>
+                                        <p>Objetivo</p>
+                                    </td>
+                                    <td>
+                                        <p>Contenido</p>
+                                    </td>
+                                    <td>
+                                        <p>Resumen</p>
+                                    </td>
+                                    <td>
+                                        <p>Tarea</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>Lenguaje</h3>
+                                    </td>
+                                    <td><img src="img/icon_main-20.png" alt="..."></td>
+                                    <td><img src="img/icon_main-21.png" alt="..."></td>
+                                    <td><img src="img/icon_main-22.png" alt="..."></td>
+                                    <td><img src="img/icon_main-23.png" alt="..."></td>
+                                    <td><img src="img/icon_main-24.png" alt="..."></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>Matemáticas</h3>
+                                    </td>
+                                    <td><img src="img/icon_main-15.png" alt="..."></td>
+                                    <td><img src="img/icon_main-16.png" alt="..."></td>
+                                    <td><img src="img/icon_main-17.png" alt="..."></td>
+                                    <td><img src="img/icon_main-18.png" alt="..."></td>
+                                    <td><img src="img/icon_main-19.png" alt="..."></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h3>Ciencias naturales</h3>
+                                    </td>
+                                    <td><img src="img/icon_main-10.png" alt="..."></td>
+                                    <td><img src="img/icon_main-11.png" alt="..."></td>
+                                    <td><img src="img/icon_main-12.png" alt="..."></td>
+                                    <td><img src="img/icon_main-13.png" alt="..."></td>
+                                    <td><img src="img/icon_main-14.png" alt="..."></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--------------------------- Blue Section -------------------------------->
+
+
+        <!--------------------------- Green Section -------------------------------->
+        <!-- 
+        <div id="section-03" class="jumbotron-green">
+            <div class="container">
+                <h3>INSTRUCCIONES INTERACTIVIDAD</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+                                <img src="img/charact-06.png" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail-org">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="well">
+                            <p style="color:#95BD20">Estos íconos le ayudarán a identificar qué acciones debe realizar para interactuar con el contenido del LO.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-32.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono que permite escribir en alguna sección del LO.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-33.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para visualizar los objetivos del LO.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-34.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono que indica que se debe dar clic sobre un elemento.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-35.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para navegar en las secciones internas de cada LO.</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-27.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para regresar al inicio de un menu ó de una secuencia de opciones.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-28.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para cerrar, puede ser un pop up u otro elemento.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-29.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para ver la descripción de un elemento.</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-30.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para ver información acerca de algo (ejecicio, etc..)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-31.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para ver información de ayuda acerca de algo (ejecicio, etc..)</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img class="right-images" src="img/icon_interactive-26.png" alt="..."></td>
+                                    <td>
+                                        <p>Icono para visualizar los derechos de autor de un contenido.</p>
+                                    </td>
+                                </tr>
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+        <!--------------------------- Green Section -------------------------------->
+
+
+    </section>
+
+
+    <!--    <footer>
+            <div class="grey">
+                <div class="container">
+                    <hr>
+                    <p><small><a href="">Follow me</a> On google +</small></p>
+                    <p><small><a href="">Like me</a> On facebook</small></p>
+                    <p><small><a href="">Ask whatever</a> On twitter</small></p>
+                </div>
+            </div>
+        </footer>  -->
+
+
+
+
+</body>
+
+</html>
